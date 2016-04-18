@@ -12,6 +12,8 @@
 		45E672841CC1F3D30049CBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E672821CC1F3D30049CBC6 /* Main.storyboard */; };
 		45E672861CC1F3D30049CBC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E672851CC1F3D30049CBC6 /* Assets.xcassets */; };
 		45E672891CC1F3D30049CBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E672871CC1F3D30049CBC6 /* LaunchScreen.storyboard */; };
+		45E672911CC1FBF80049CBC6 /* SoundTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E672901CC1FBF80049CBC6 /* SoundTabViewController.swift */; };
+		45E672931CC4CA5E0049CBC6 /* RDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E672921CC4CA5D0049CBC6 /* RDButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		45E672851CC1F3D30049CBC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E672881CC1F3D30049CBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E6728A1CC1F3D30049CBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E672901CC1FBF80049CBC6 /* SoundTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTabViewController.swift; sourceTree = "<group>"; };
+		45E672921CC4CA5D0049CBC6 /* RDButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 				45E6727E1CC1F3D30049CBC6 /* AppDelegate.swift */,
 				45E672801CC1F3D30049CBC6 /* ViewController.swift */,
 				45E672821CC1F3D30049CBC6 /* Main.storyboard */,
+				45E672901CC1FBF80049CBC6 /* SoundTabViewController.swift */,
 				45E672851CC1F3D30049CBC6 /* Assets.xcassets */,
 				45E672871CC1F3D30049CBC6 /* LaunchScreen.storyboard */,
 				45E6728A1CC1F3D30049CBC6 /* Info.plist */,
+				45E672921CC4CA5D0049CBC6 /* RDButton.swift */,
 			);
 			path = Citcitcuit;
 			sourceTree = "<group>";
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E672911CC1FBF80049CBC6 /* SoundTabViewController.swift in Sources */,
 				45E672811CC1F3D30049CBC6 /* ViewController.swift in Sources */,
 				45E6727F1CC1F3D30049CBC6 /* AppDelegate.swift in Sources */,
+				45E672931CC4CA5E0049CBC6 /* RDButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +260,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Citcitcuit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.web.banu.Citcitcuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,6 +272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Citcitcuit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.web.banu.Citcitcuit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
