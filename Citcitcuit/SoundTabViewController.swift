@@ -54,6 +54,17 @@ class SoundTabViewController: UIViewController {
             button.backgroundColor = UIColor.lightGrayColor()
             
             button.audioName(audios![index])
+            
+            let label = UILabel(frame: CGRect(x: 0, y: buttonHeight*2/3, width: buttonWidth, height: buttonHeight/3))
+            label.textAlignment = NSTextAlignment.Center
+            label.textColor = UIColor.whiteColor()
+            label.numberOfLines = 2
+            label.adjustsFontSizeToFitWidth = true
+            
+            
+            label.text = audios![index]
+            
+            button.addSubview(label)
             buttons.append(button)
             
             buttonsContainer.addSubview(button)

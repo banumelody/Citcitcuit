@@ -9,10 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var animalButton: UIButton!
+    @IBOutlet weak var natureButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +30,7 @@ class ViewController: UIViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let secondViewController = segue.destinationViewController as! SoundTabViewController
         secondViewController.soundType = segue.identifier
+        secondViewController.title = segue.identifier?.capitalizedString
     }
     
 }
