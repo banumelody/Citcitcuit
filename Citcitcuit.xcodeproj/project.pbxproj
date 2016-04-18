@@ -21,6 +21,8 @@
 		45E672A01CC4CD7A0049CBC6 /* Othe-othe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E672991CC4CD7A0049CBC6 /* Othe-othe.wav */; };
 		45E672A11CC4CD7A0049CBC6 /* Tonggeret.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E6729A1CC4CD7A0049CBC6 /* Tonggeret.wav */; };
 		45E672A21CC4CD7A0049CBC6 /* Hujan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E6729B1CC4CD7A0049CBC6 /* Hujan.wav */; };
+		45E672A41CC4E87A0049CBC6 /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E672A31CC4E87A0049CBC6 /* frog.png */; };
+		45E672A61CC4EC950049CBC6 /* deciduous_tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E672A51CC4EC950049CBC6 /* deciduous_tree.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		45E672991CC4CD7A0049CBC6 /* Othe-othe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Othe-othe.wav"; sourceTree = "<group>"; };
 		45E6729A1CC4CD7A0049CBC6 /* Tonggeret.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tonggeret.wav; sourceTree = "<group>"; };
 		45E6729B1CC4CD7A0049CBC6 /* Hujan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hujan.wav; sourceTree = "<group>"; };
+		45E672A31CC4E87A0049CBC6 /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
+		45E672A51CC4EC950049CBC6 /* deciduous_tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deciduous_tree.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				45E672941CC4CD7A0049CBC6 /* RuangSuara */,
 				45E672901CC1FBF80049CBC6 /* SoundTabViewController.swift */,
 				45E672851CC1F3D30049CBC6 /* Assets.xcassets */,
+				45E672A31CC4E87A0049CBC6 /* frog.png */,
+				45E672A51CC4EC950049CBC6 /* deciduous_tree.png */,
 				45E672871CC1F3D30049CBC6 /* LaunchScreen.storyboard */,
 				45E6728A1CC1F3D30049CBC6 /* Info.plist */,
 				45E672921CC4CA5D0049CBC6 /* RDButton.swift */,
@@ -158,12 +164,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				45E672A01CC4CD7A0049CBC6 /* Othe-othe.wav in Resources */,
+				45E672A61CC4EC950049CBC6 /* deciduous_tree.png in Resources */,
 				45E672891CC1F3D30049CBC6 /* LaunchScreen.storyboard in Resources */,
 				45E672A11CC4CD7A0049CBC6 /* Tonggeret.wav in Resources */,
 				45E672861CC1F3D30049CBC6 /* Assets.xcassets in Resources */,
 				45E672841CC1F3D30049CBC6 /* Main.storyboard in Resources */,
 				45E6729D1CC4CD7A0049CBC6 /* Kodok.wav in Resources */,
 				45E672A21CC4CD7A0049CBC6 /* Hujan.wav in Resources */,
+				45E672A41CC4E87A0049CBC6 /* frog.png in Resources */,
 				45E6729C1CC4CD7A0049CBC6 /* Kodok-Jangkrik.wav in Resources */,
 				45E6729E1CC4CD7A0049CBC6 /* Krok.wav in Resources */,
 				45E6729F1CC4CD7A0049CBC6 /* Ombak.wav in Resources */,

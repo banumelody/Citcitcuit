@@ -33,7 +33,7 @@ class SoundTabViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = backgroundColors[0]
+//        self.view.backgroundColor = backgroundColors[0]
 //        selector.tintColor = backgroundColors[0]
     }
     

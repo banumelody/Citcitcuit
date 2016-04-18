@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Pilih Suara-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Citcitcuit" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,24 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlx-VH-yDv">
-                                <rect key="frame" x="470" y="145" width="35" height="30"/>
-                                <state key="normal" title="Alam"/>
-                                <connections>
-                                    <segue destination="odO-Y6-NI5" kind="show" identifier="nature" id="yuC-yB-Yjh"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeW-tf-Qeb">
-                                <rect key="frame" x="134" y="145" width="114" height="73"/>
-                                <state key="normal" title="Hewan"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeW-tf-Qeb">
+                                <rect key="frame" x="84" y="60" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="0yF-NJ-Qpw"/>
+                                    <constraint firstAttribute="height" constant="200" id="mRr-0Y-82O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Hewan">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="odO-Y6-NI5" kind="show" identifier="animal" id="W3w-Mi-JEU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlx-VH-yDv">
+                                <rect key="frame" x="284" y="60" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="AIa-Zz-RA3"/>
+                                    <constraint firstAttribute="width" constant="200" id="sBL-eN-w56"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Alam">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="odO-Y6-NI5" kind="show" identifier="nature" id="yuC-yB-Yjh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jlx-VH-yDv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="100" id="2Sq-22-hAX"/>
+                            <constraint firstItem="Jlx-VH-yDv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6e7-Lt-hSU"/>
+                            <constraint firstItem="ZeW-tf-Qeb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LI0-LG-Np6"/>
+                            <constraint firstItem="ZeW-tf-Qeb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-100" id="LJ7-A2-bSG"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ytH-b6-Czm"/>
+                    <navigationItem key="navigationItem" title="Pilih Suara" id="ytH-b6-Czm"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
