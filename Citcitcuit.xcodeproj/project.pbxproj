@@ -14,6 +14,13 @@
 		45E672891CC1F3D30049CBC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E672871CC1F3D30049CBC6 /* LaunchScreen.storyboard */; };
 		45E672911CC1FBF80049CBC6 /* SoundTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E672901CC1FBF80049CBC6 /* SoundTabViewController.swift */; };
 		45E672931CC4CA5E0049CBC6 /* RDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E672921CC4CA5D0049CBC6 /* RDButton.swift */; };
+		45E6729C1CC4CD7A0049CBC6 /* kodok-jangkrik-jay-15.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E672951CC4CD7A0049CBC6 /* kodok-jangkrik-jay-15.wav */; };
+		45E6729D1CC4CD7A0049CBC6 /* kodok-jay-13.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E672961CC4CD7A0049CBC6 /* kodok-jay-13.wav */; };
+		45E6729E1CC4CD7A0049CBC6 /* krok-jay-34.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E672971CC4CD7A0049CBC6 /* krok-jay-34.wav */; };
+		45E6729F1CC4CD7A0049CBC6 /* OMBAK-jay-36.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E672981CC4CD7A0049CBC6 /* OMBAK-jay-36.wav */; };
+		45E672A01CC4CD7A0049CBC6 /* othe othe-jay-19.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E672991CC4CD7A0049CBC6 /* othe othe-jay-19.wav */; };
+		45E672A11CC4CD7A0049CBC6 /* tonggeret-jay-31.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E6729A1CC4CD7A0049CBC6 /* tonggeret-jay-31.wav */; };
+		45E672A21CC4CD7A0049CBC6 /* UDAN-jay-14.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E6729B1CC4CD7A0049CBC6 /* UDAN-jay-14.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,13 @@
 		45E6728A1CC1F3D30049CBC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45E672901CC1FBF80049CBC6 /* SoundTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundTabViewController.swift; sourceTree = "<group>"; };
 		45E672921CC4CA5D0049CBC6 /* RDButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RDButton.swift; sourceTree = "<group>"; };
+		45E672951CC4CD7A0049CBC6 /* kodok-jangkrik-jay-15.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "kodok-jangkrik-jay-15.wav"; sourceTree = "<group>"; };
+		45E672961CC4CD7A0049CBC6 /* kodok-jay-13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "kodok-jay-13.wav"; sourceTree = "<group>"; };
+		45E672971CC4CD7A0049CBC6 /* krok-jay-34.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "krok-jay-34.wav"; sourceTree = "<group>"; };
+		45E672981CC4CD7A0049CBC6 /* OMBAK-jay-36.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "OMBAK-jay-36.wav"; sourceTree = "<group>"; };
+		45E672991CC4CD7A0049CBC6 /* othe othe-jay-19.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "othe othe-jay-19.wav"; sourceTree = "<group>"; };
+		45E6729A1CC4CD7A0049CBC6 /* tonggeret-jay-31.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "tonggeret-jay-31.wav"; sourceTree = "<group>"; };
+		45E6729B1CC4CD7A0049CBC6 /* UDAN-jay-14.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "UDAN-jay-14.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +75,7 @@
 				45E6727E1CC1F3D30049CBC6 /* AppDelegate.swift */,
 				45E672801CC1F3D30049CBC6 /* ViewController.swift */,
 				45E672821CC1F3D30049CBC6 /* Main.storyboard */,
+				45E672941CC4CD7A0049CBC6 /* RuangSuara */,
 				45E672901CC1FBF80049CBC6 /* SoundTabViewController.swift */,
 				45E672851CC1F3D30049CBC6 /* Assets.xcassets */,
 				45E672871CC1F3D30049CBC6 /* LaunchScreen.storyboard */,
@@ -68,6 +83,20 @@
 				45E672921CC4CA5D0049CBC6 /* RDButton.swift */,
 			);
 			path = Citcitcuit;
+			sourceTree = "<group>";
+		};
+		45E672941CC4CD7A0049CBC6 /* RuangSuara */ = {
+			isa = PBXGroup;
+			children = (
+				45E672951CC4CD7A0049CBC6 /* kodok-jangkrik-jay-15.wav */,
+				45E672961CC4CD7A0049CBC6 /* kodok-jay-13.wav */,
+				45E672971CC4CD7A0049CBC6 /* krok-jay-34.wav */,
+				45E672981CC4CD7A0049CBC6 /* OMBAK-jay-36.wav */,
+				45E672991CC4CD7A0049CBC6 /* othe othe-jay-19.wav */,
+				45E6729A1CC4CD7A0049CBC6 /* tonggeret-jay-31.wav */,
+				45E6729B1CC4CD7A0049CBC6 /* UDAN-jay-14.wav */,
+			);
+			path = RuangSuara;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +157,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E672A01CC4CD7A0049CBC6 /* othe othe-jay-19.wav in Resources */,
 				45E672891CC1F3D30049CBC6 /* LaunchScreen.storyboard in Resources */,
+				45E672A11CC4CD7A0049CBC6 /* tonggeret-jay-31.wav in Resources */,
 				45E672861CC1F3D30049CBC6 /* Assets.xcassets in Resources */,
 				45E672841CC1F3D30049CBC6 /* Main.storyboard in Resources */,
+				45E6729D1CC4CD7A0049CBC6 /* kodok-jay-13.wav in Resources */,
+				45E672A21CC4CD7A0049CBC6 /* UDAN-jay-14.wav in Resources */,
+				45E6729C1CC4CD7A0049CBC6 /* kodok-jangkrik-jay-15.wav in Resources */,
+				45E6729E1CC4CD7A0049CBC6 /* krok-jay-34.wav in Resources */,
+				45E6729F1CC4CD7A0049CBC6 /* OMBAK-jay-36.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

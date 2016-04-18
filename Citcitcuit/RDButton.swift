@@ -51,7 +51,6 @@ class RDButton: UIButton {
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let touch = (touches as NSSet).anyObject() as! UITouch
-        //        let touch = touches.anyObject()! as UITouch
         let location = touch.locationInView(self)
         
         backgroundColor = UIColor(red: 1.0 - (location.y/maxVol), green: location.y/maxVol, blue: 0.0, alpha: 1.0)
@@ -87,16 +86,8 @@ class RDButton: UIButton {
         touchArea.hidden = false
         touchArea.frame = CGRect(origin: CGPoint(x: touchX, y: touchY), size: touchAreaSize)
         
-////        print("playing \(playing.first)")
-//        
-//        if(playing.first == nil) {
-//            index = 0
-//        }
-//        print("play \(index)")
-//        playing.append(index)
-//        index = index + 1
         print(audioPlayers[index].url)
-//                audioPlayers[index].url?.absoluteString
+
     }
     
     override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
@@ -139,19 +130,7 @@ class RDButton: UIButton {
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         backgroundColor = UIColor.lightGrayColor()
         audioPlayers[index].stop()
-        
-//        let fadeOut = audioPlayers.first!.volume/5
 
-//        for i in 1...5 {
-//            let timeToDelay = Double(i) * 1
-//            delay(timeToDelay) {
-//                if (i == 5) {
-//                    print("stop \(self.playing.first)")
-//                    self.playing.removeFirst()
-//                }
-//            }
-//        }
-        
         touchArea.hidden = true
 
     }
