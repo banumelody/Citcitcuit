@@ -9,7 +9,7 @@
         <!--Pilih Suara-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Citcitcuit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Teoteblung" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="241" y="842"/>
         </scene>
-        <!--Citcitcuit-->
+        <!--Teoteblung-->
         <scene sceneID="BuP-mV-FbZ">
             <objects>
-                <viewController id="odO-Y6-NI5" customClass="SoundTabViewController" customModule="Citcitcuit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="odO-Y6-NI5" customClass="SoundTabViewController" customModule="Teoteblung" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BWS-zh-hdN"/>
                         <viewControllerLayoutGuide type="bottom" id="LTu-c2-jYS"/>
@@ -110,7 +110,7 @@
                             <constraint firstItem="LTu-c2-jYS" firstAttribute="top" secondItem="K3X-hE-o8j" secondAttribute="bottom" constant="8" id="WNv-bI-abI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Citcitcuit" id="Hoj-Pz-9bM"/>
+                    <navigationItem key="navigationItem" title="Teoteblung" id="Hoj-Pz-9bM"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>

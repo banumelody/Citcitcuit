@@ -23,10 +23,11 @@
 		45E672A21CC4CD7A0049CBC6 /* Hujan.wav in Resources */ = {isa = PBXBuildFile; fileRef = 45E6729B1CC4CD7A0049CBC6 /* Hujan.wav */; };
 		45E672A41CC4E87A0049CBC6 /* frog.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E672A31CC4E87A0049CBC6 /* frog.png */; };
 		45E672A61CC4EC950049CBC6 /* deciduous_tree.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E672A51CC4EC950049CBC6 /* deciduous_tree.png */; };
+		45E672A81CC4F1AB0049CBC6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45E672A71CC4F1AB0049CBC6 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		45E6727B1CC1F3D30049CBC6 /* Citcitcuit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Citcitcuit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45E6727B1CC1F3D30049CBC6 /* Teoteblung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teoteblung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6727E1CC1F3D30049CBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45E672801CC1F3D30049CBC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		45E672831CC1F3D30049CBC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,6 +45,9 @@
 		45E6729B1CC4CD7A0049CBC6 /* Hujan.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Hujan.wav; sourceTree = "<group>"; };
 		45E672A31CC4E87A0049CBC6 /* frog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frog.png; sourceTree = "<group>"; };
 		45E672A51CC4EC950049CBC6 /* deciduous_tree.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deciduous_tree.png; sourceTree = "<group>"; };
+		45E672A71CC4F1AB0049CBC6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		45E672A91CC4F5210049CBC6 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
+		45E672AA1CC4F5210049CBC6 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +64,8 @@
 		45E672721CC1F3D30049CBC6 = {
 			isa = PBXGroup;
 			children = (
-				45E6727D1CC1F3D30049CBC6 /* Citcitcuit */,
+				45E672A71CC4F1AB0049CBC6 /* Default-568h@2x.png */,
+				45E6727D1CC1F3D30049CBC6 /* Teoteblung */,
 				45E6727C1CC1F3D30049CBC6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,12 +73,12 @@
 		45E6727C1CC1F3D30049CBC6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				45E6727B1CC1F3D30049CBC6 /* Citcitcuit.app */,
+				45E6727B1CC1F3D30049CBC6 /* Teoteblung.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		45E6727D1CC1F3D30049CBC6 /* Citcitcuit */ = {
+		45E6727D1CC1F3D30049CBC6 /* Teoteblung */ = {
 			isa = PBXGroup;
 			children = (
 				45E6727E1CC1F3D30049CBC6 /* AppDelegate.swift */,
@@ -88,6 +93,7 @@
 				45E6728A1CC1F3D30049CBC6 /* Info.plist */,
 				45E672921CC4CA5D0049CBC6 /* RDButton.swift */,
 			);
+			name = Teoteblung;
 			path = Citcitcuit;
 			sourceTree = "<group>";
 		};
@@ -108,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		45E6727A1CC1F3D30049CBC6 /* Citcitcuit */ = {
+		45E6727A1CC1F3D30049CBC6 /* Teoteblung */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 45E6728D1CC1F3D30049CBC6 /* Build configuration list for PBXNativeTarget "Citcitcuit" */;
+			buildConfigurationList = 45E6728D1CC1F3D30049CBC6 /* Build configuration list for PBXNativeTarget "Teoteblung" */;
 			buildPhases = (
 				45E672771CC1F3D30049CBC6 /* Sources */,
 				45E672781CC1F3D30049CBC6 /* Frameworks */,
@@ -120,9 +126,9 @@
 			);
 			dependencies = (
 			);
-			name = Citcitcuit;
+			name = Teoteblung;
 			productName = Citcitcuit;
-			productReference = 45E6727B1CC1F3D30049CBC6 /* Citcitcuit.app */;
+			productReference = 45E6727B1CC1F3D30049CBC6 /* Teoteblung.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,10 +143,11 @@
 				TargetAttributes = {
 					45E6727A1CC1F3D30049CBC6 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = L36L3WSJF7;
 					};
 				};
 			};
-			buildConfigurationList = 45E672761CC1F3D30049CBC6 /* Build configuration list for PBXProject "Citcitcuit" */;
+			buildConfigurationList = 45E672761CC1F3D30049CBC6 /* Build configuration list for PBXProject "Teoteblung" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -153,7 +160,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				45E6727A1CC1F3D30049CBC6 /* Citcitcuit */,
+				45E6727A1CC1F3D30049CBC6 /* Teoteblung */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +179,7 @@
 				45E6729D1CC4CD7A0049CBC6 /* Kodok.wav in Resources */,
 				45E672A21CC4CD7A0049CBC6 /* Hujan.wav in Resources */,
 				45E672A41CC4E87A0049CBC6 /* frog.png in Resources */,
+				45E672A81CC4F1AB0049CBC6 /* Default-568h@2x.png in Resources */,
 				45E6729C1CC4CD7A0049CBC6 /* Kodok-Jangkrik.wav in Resources */,
 				45E6729E1CC4CD7A0049CBC6 /* Krok.wav in Resources */,
 				45E6729F1CC4CD7A0049CBC6 /* Ombak.wav in Resources */,
@@ -199,6 +207,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				45E672831CC1F3D30049CBC6 /* Base */,
+				45E672A91CC4F5210049CBC6 /* id */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -207,6 +216,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				45E672881CC1F3D30049CBC6 /* Base */,
+				45E672AA1CC4F5210049CBC6 /* id */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -251,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -291,7 +301,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,11 +313,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Citcitcuit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = id.web.banu.Citcitcuit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = id.web.banu.Teoteblung;
+				PRODUCT_NAME = Teoteblung;
 			};
 			name = Debug;
 		};
@@ -315,18 +326,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Citcitcuit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = id.web.banu.Citcitcuit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = id.web.banu.Teoteblung;
+				PRODUCT_NAME = Teoteblung;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		45E672761CC1F3D30049CBC6 /* Build configuration list for PBXProject "Citcitcuit" */ = {
+		45E672761CC1F3D30049CBC6 /* Build configuration list for PBXProject "Teoteblung" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				45E6728B1CC1F3D30049CBC6 /* Debug */,
@@ -335,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		45E6728D1CC1F3D30049CBC6 /* Build configuration list for PBXNativeTarget "Citcitcuit" */ = {
+		45E6728D1CC1F3D30049CBC6 /* Build configuration list for PBXNativeTarget "Teoteblung" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				45E6728E1CC1F3D30049CBC6 /* Debug */,

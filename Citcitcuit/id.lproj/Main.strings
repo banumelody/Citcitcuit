@@ -1,0 +1,12 @@
+
+/* Class = "UINavigationItem"; title = "Teoteblung"; ObjectID = "Hoj-Pz-9bM"; */
+"Hoj-Pz-9bM.title" = "Teoteblung";
+
+/* Class = "UIButton"; normalTitle = "Alam"; ObjectID = "Jlx-VH-yDv"; */
+"Jlx-VH-yDv.normalTitle" = "Alam";
+
+/* Class = "UIButton"; normalTitle = "Hewan"; ObjectID = "ZeW-tf-Qeb"; */
+"ZeW-tf-Qeb.normalTitle" = "Hewan";
+
+/* Class = "UINavigationItem"; title = "Pilih Suara"; ObjectID = "ytH-b6-Czm"; */
+"ytH-b6-Czm.title" = "Pilih Suara";
