@@ -21,5 +21,10 @@ class ViewController: UIViewController {
     }
 
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let secondViewController = segue.destinationViewController as! SoundTabViewController
+        secondViewController.soundType = segue.identifier
+    }
+    
 }
 
