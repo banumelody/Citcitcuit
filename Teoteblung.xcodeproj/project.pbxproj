@@ -354,6 +354,7 @@
 				45E6728F1CC1F3D30049CBC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
