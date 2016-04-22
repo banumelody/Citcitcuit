@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45B66BD21CCA7574000DACDE /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B66BD01CCA7574000DACDE /* Fabric.framework */; };
+		45B66BD31CCA7574000DACDE /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B66BD11CCA7574000DACDE /* Crashlytics.framework */; };
 		45E6727F1CC1F3D30049CBC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E6727E1CC1F3D30049CBC6 /* AppDelegate.swift */; };
 		45E672811CC1F3D30049CBC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E672801CC1F3D30049CBC6 /* ViewController.swift */; };
 		45E672841CC1F3D30049CBC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E672821CC1F3D30049CBC6 /* Main.storyboard */; };
@@ -27,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45B66BD01CCA7574000DACDE /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		45B66BD11CCA7574000DACDE /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		45E6727B1CC1F3D30049CBC6 /* Teoteblung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teoteblung.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E6727E1CC1F3D30049CBC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45E672801CC1F3D30049CBC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B66BD31CCA7574000DACDE /* Crashlytics.framework in Frameworks */,
+				45B66BD21CCA7574000DACDE /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +70,8 @@
 		45E672721CC1F3D30049CBC6 = {
 			isa = PBXGroup;
 			children = (
+				45B66BD01CCA7574000DACDE /* Fabric.framework */,
+				45B66BD11CCA7574000DACDE /* Crashlytics.framework */,
 				45E672A71CC4F1AB0049CBC6 /* Default-568h@2x.png */,
 				45E6727D1CC1F3D30049CBC6 /* Teoteblung */,
 				45E6727C1CC1F3D30049CBC6 /* Products */,
@@ -121,6 +129,7 @@
 				45E672771CC1F3D30049CBC6 /* Sources */,
 				45E672781CC1F3D30049CBC6 /* Frameworks */,
 				45E672791CC1F3D30049CBC6 /* Resources */,
+				45B66BCF1CCA7548000DACDE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -187,6 +196,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		45B66BCF1CCA7548000DACDE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 28bdeb0e2792659b68e997596b07f6f974aa7dc7 f9401cd931c56410b71f19d31d2dee6305fb03091d6c8bce1f1fd1d2bb5348d9";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		45E672771CC1F3D30049CBC6 /* Sources */ = {
@@ -261,9 +286,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "1084ec11-3fe3-4690-b713-5fde737ddba4";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,8 +327,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "31a7faaf-fed3-456d-b397-aa8a56866a51";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -313,12 +340,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Citcitcuit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.web.banu.Teoteblung;
 				PRODUCT_NAME = Teoteblung;
+				PROVISIONING_PROFILE = "1084ec11-3fe3-4690-b713-5fde737ddba4";
 			};
 			name = Debug;
 		};
@@ -326,12 +359,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Citcitcuit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = id.web.banu.Teoteblung;
 				PRODUCT_NAME = Teoteblung;
+				PROVISIONING_PROFILE = "31a7faaf-fed3-456d-b397-aa8a56866a51";
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};
