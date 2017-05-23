@@ -35,10 +35,10 @@ class RDButton: UIButton {
         maxVol = bounds.height
         
         touchArea.frame = CGRect(origin: CGPoint(x: 0.0, y: 0.0), size: touchAreaSize)
-        touchArea.backgroundColor = UIColor.clearColor()
-        touchArea.hidden = true
+        touchArea.backgroundColor = UIColor.clear
+        touchArea.isHidden = true
         touchArea.layer.cornerRadius = 50
-        touchArea.layer.borderColor = UIColor.blueColor().CGColor
+        touchArea.layer.borderColor = UIColor.blue.cgColor
         touchArea.layer.borderWidth = 5
         touchArea.clipsToBounds = true
         self.addSubview(touchArea)
@@ -49,9 +49,9 @@ class RDButton: UIButton {
         super.init(coder: aDecoder)
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = (touches as NSSet).anyObject() as! UITouch
-        let location = touch.locationInView(self)
+        let location = touch.location(in: self)
         
         backgroundColor = UIColor(red: 1.0 - (location.y/maxVol), green: location.y/maxVol, blue: 0.0, alpha: 1.0)
         audioPlayers[index].currentTime = 0
@@ -83,17 +83,15 @@ class RDButton: UIButton {
         }
         
         
-        touchArea.hidden = false
+        touchArea.isHidden = false
         touchArea.frame = CGRect(origin: CGPoint(x: touchX, y: touchY), size: touchAreaSize)
         
-        print(audioPlayers[index].url)
-
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = (touches as NSSet).anyObject() as! UITouch
         //        let touch = touches.anyObject()! as UITouch
-        let location = touch.locationInView(self)
+        let location = touch.location(in: self)
         var volume = Float(1.0 - (location.y/(maxVol*4/5)))
         if (volume<=0.0) {
             volume = 0.0
@@ -123,37 +121,33 @@ class RDButton: UIButton {
         }
         
         
-        touchArea.hidden = false
+        touchArea.isHidden = false
         touchArea.frame = CGRect(origin: CGPoint(x: touchX, y: touchY), size: touchAreaSize)
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        backgroundColor = UIColor.lightGrayColor()
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        backgroundColor = UIColor.lightGray
         audioPlayers[index].stop()
 
-        touchArea.hidden = true
+        touchArea.isHidden = true
 
     }
     
-    func delay(delay:Double, closure:()->()) {
-        dispatch_after(
-            dispatch_time(
-                DISPATCH_TIME_NOW,
-                Int64(delay * Double(NSEC_PER_SEC))
-            ),
-            dispatch_get_main_queue(), closure)
+    func delay(_ delay:Double, closure:@escaping ()->()) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
     }
     
-    func audioName(audioName: String) {
+    func audioName(_ audioName: String) {
         self.audioName = audioName
         
-        let audioFilePath = NSBundle.mainBundle().pathForResource(audioName, ofType: "wav")
+        let audioFilePath = Bundle.main.path(forResource: audioName, ofType: "wav")
         print(audioName)
         
-        let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+        let audioFileUrl = URL(fileURLWithPath: audioFilePath!)
         
         do {
-            try audioPlayer = AVAudioPlayer(contentsOfURL: audioFileUrl, fileTypeHint: nil)
+            try audioPlayer = AVAudioPlayer(contentsOf: audioFileUrl, fileTypeHint: nil)
             audioPlayer.numberOfLoops = -1
             audioPlayers.append(audioPlayer)
         } catch {
@@ -163,16 +157,16 @@ class RDButton: UIButton {
 
     }
     
-    func setAudioName(audioName: String, index: Int) {
+    func setAudioName(_ audioName: String, index: Int) {
         self.audioName = audioName
         
-        let audioFilePath = NSBundle.mainBundle().pathForResource(audioName, ofType: "wav")
+        let audioFilePath = Bundle.main.path(forResource: audioName, ofType: "wav")
 
-        let audioFileUrl = NSURL.fileURLWithPath(audioFilePath!)
+        let audioFileUrl = URL(fileURLWithPath: audioFilePath!)
         
         print(audioName)
         do {
-            try audioPlayers[0] = AVAudioPlayer(contentsOfURL: audioFileUrl, fileTypeHint: nil)
+            try audioPlayers[0] = AVAudioPlayer(contentsOf: audioFileUrl, fileTypeHint: nil)
             audioPlayers[0].numberOfLoops = -1
         } catch {
             print("audio file is not found")

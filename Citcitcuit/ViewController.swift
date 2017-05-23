@@ -20,11 +20,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let frog = CGImageCreateWithImageInRect(frogImage.CGImage, CGRect(x: 650, y: 460, width: 250, height: 250))
-        let tree = CGImageCreateWithImageInRect(treeImage.CGImage, CGRect(x: 800, y: 480, width: 250, height: 250))
+        let frog = frogImage.cgImage?.cropping(to: CGRect(x: 650, y: 460, width: 250, height: 250))
+        let tree = treeImage.cgImage?.cropping(to: CGRect(x: 800, y: 480, width: 250, height: 250))
         
-        animalButton.setBackgroundImage(UIImage(CGImage: frog!), forState: UIControlState.Normal)
-        natureButton.setBackgroundImage(UIImage(CGImage: tree!), forState: UIControlState.Normal)
+        animalButton.setBackgroundImage(UIImage(cgImage: frog!), for: UIControlState())
+        natureButton.setBackgroundImage(UIImage(cgImage: tree!), for: UIControlState())
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,10 +33,10 @@ class ViewController: UIViewController {
     }
 
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let secondViewController = segue.destinationViewController as! SoundTabViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondViewController = segue.destination as! SoundTabViewController
         secondViewController.soundType = segue.identifier
-        secondViewController.title = segue.identifier?.capitalizedString
+        secondViewController.title = segue.identifier?.capitalized
     }
     
 }

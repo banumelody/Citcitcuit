@@ -33,14 +33,12 @@ class SoundTabViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = backgroundColors[0]
-//        selector.tintColor = backgroundColors[0]
     }
     
     var buttonWidth:CGFloat!
     var buttonHeight:CGFloat!
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         
         let audios = audioNames[soundType!]
         let length = audios!.count
@@ -51,16 +49,15 @@ class SoundTabViewController: UIViewController {
         for index in 0...(length-1) {
             
             let button = RDButton(frame: CGRect(x: (CGFloat(index) * (buttonWidth + 8)) + 8, y: 8, width: buttonWidth, height: buttonHeight))
-            button.backgroundColor = UIColor.lightGrayColor()
+            button.backgroundColor = UIColor.lightGray
             
             button.audioName(audios![index])
             
             let label = UILabel(frame: CGRect(x: 0, y: buttonHeight*2/3, width: buttonWidth, height: buttonHeight/3))
-            label.textAlignment = NSTextAlignment.Center
-            label.textColor = UIColor.whiteColor()
+            label.textAlignment = NSTextAlignment.center
+            label.textColor = UIColor.white
             label.numberOfLines = 2
             label.adjustsFontSizeToFitWidth = true
-            
             
             label.text = audios![index]
             
